@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PARADON GUCCI</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#050807;color:#00ff99;font-family:monospace;display:grid;place-items:center;text-align:center}
+main{width:min(90%,500px);padding:30px}
+h1{letter-spacing:5px;color:#00ff99}
+.shield{width:190px;height:190px;margin:35px auto;border:3px solid #00ff99;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 25px #00ff9955;animation:pulse 2s infinite}
+.layers{font-size:18px;line-height:2}
+input,button{width:100%;padding:14px;margin-top:12px;background:#07120d;color:#00ff99;border:1px solid #00ff99;font-family:monospace}
+button{cursor:pointer}
+#status{margin-top:20px;color:#aaffcc}
+@keyframes pulse{50%{box-shadow:0 0 45px #00ff99aa}}
+</style>
+</head>
+<body>
+<main>
+<h1>PARADON GUCCI</h1>
+<p>PRIVATE CYBER PORTAL</p>
+<div class="shield"><div class="layers">FIREWALL 01<br>FIREWALL 02<br>FIREWALL 03</div></div>
+<p>THREE-LAYER SECURITY</p>
+<form id="login">
+<input type="password" id="password" placeholder="Enter access password" required>
+<button type="submit">VERIFY ACCESS</button>
+</form>
+<div id="status">SYSTEM READY</div>
+</main>
+<script>
+document.getElementById("login").onsubmit=function(e){
+e.preventDefault();
+document.getElementById("status").textContent="DEMO ONLY — connect a secure server to verify access.";
+};
+</script>
+</body>
+</html>
